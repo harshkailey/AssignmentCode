@@ -2,121 +2,266 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/rooms.css">
-    <link rel="stylesheet" href="css/grid_done.css">
-    <link rel="stylesheet" href="css/main_done.css`">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d0e8431583.js" crossorigin="anonymous"></script>
+    <link href="css/grid_done.css" rel="stylesheet" type="text/css">
+    <link href="css/main_done.css" rel="stylesheet" type="text/css">
+    <link href="css/rooms.css" rel="stylesheet" type="text/css">
 
-
-    <title>Rooms - Couples Resort</title>
+    <title>Rooms</title>
 </head>
-<body>
-    <div id="mobile-outline">
-        <header class="grid-con" id="main-header">
-            <nav id="main-nav" class="col-span-full">
-                <input type="checkbox" id="hamburger">
-                <label for="hamburger">
+    <body>
+        <div id="mobile-outline">
+        <h1 class="hidden">Welcome to The Couples Resort</h1>
+        <!-- Main Nav -->         
+            <header class="grid-con" id="main-header">
+                <nav id="main-nav" class="col-span-full">
+                    <h2 class="hidden">Main Navigation</h2>
+                    <input type="checkbox" id="hamburger">
+                    <label for="hamburger">
                     <img src="images/burger.svg" alt="hamburger menu icon">
-                </label>
-                <div id="burger-con">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="rooms.html">Rooms</a></li>
-                        <li><a href="packages.html">Packages</a></li>
-                        <li><a href="spa.html">Spa Activities</a></li>
-                        <li><a href="reservations.html">Reservations</a></li>
-                    </ul>
+                    </label>
+                    <div id="burger-con">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="rooms.html">Rooms</a></li>
+                            <li><a href="#">Packages</a></li>
+                            <li><a href="#">Dining</a></li>
+                            <li><a href="#">Spa Activites</a></li>
+                            <li><a href="#">Reservations</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div id="logo" class="col-span-full">
+                    <img src="images/couples_resort_logo.svg" alt="Couples Resort Logo">
                 </div>
-            </nav>
-            <div id="logo" class="col-span-full">
-                <img src="images/couples_resort_logo.svg" alt="Couples Resort Logo">
+            </header>        
+        <!-- Main Hero -->
+        <section id="hero" class="grid-con">
+            <h2 class="hidden">Book a stay with us</h2>                       
+            <div id="book-now-hero" class="book-now col-start-3 col-span-2">
+                <p>Book Now</p>
             </div>
-        </header>
-
-        <!-- Hero Section -->
+            <section id="hero-heading-box" class="col-span-full">
+                <h2 class="hero-img-h2">
+                    <span>Couples Resort</span><br>Symbol of Hospitality
+                </h2>
+            </section>
+        </section>
+           
+        <div class="grid-con">
+            <section id="hero-summary" class="col-span-full line-separator">
+                <h2 class="hidden">Rooms for You</h2>
+                <p>Welcome to Couples Resort, Soyers Lake.  Haliburton's Only 5 STAR Luxury Resort.  Fine Luxury while still being Rustic with Wilderness.  A Boutique Luxury Resort with Junior suite rooms and cottages that are each designed uniquely, just for the 2 of you, varying between Opulent Old European to Natural Hailburton Style.  Come and experience very spacious accommodations, each and all, with Jacuzzi's, Wood Burning Fireplaces, Hot Tubs and so much more. </p> 
+                <p>"For over 50 years we have been committed to helping couples stay connected. 100% Canadian Owned, By the LeBlanc Family since 1958."</p>
+            </section>
+        </div>
+            
         <section id="rooms-hero" class="grid-con">
             <h2 class="hidden">Our Rooms</h2>
             <div id="rooms-hero-heading-box" class="col-span-full">
-                <h2 class="hero-img-h2"><span>Couples Resort</span><br> Luxurious Rooms</h2>
+                <h2 class="hero-img-h2"><span>Couples Resort</span><br> Luxurious Rooms Options</h2>
             </div>
         </section>
 
-        <!-- Summary Section -->
-        <section id="rooms-summary" class="grid-con">
-            <h2 class="hidden">Room Details</h2>
-            <p>Experience the ultimate luxury in our uniquely designed rooms, each featuring a Jacuzzi, wood-burning fireplace, and private balcony. Your comfort is our priority!</p>
-        </section>
-
-        <!-- Room Listings -->
+        <!-- Room Listings Section -->
         <section id="room-listings" class="grid-con">
-            <h2 class="section-heading">Our Room Options</h2>
+            <!-- <h2 class="section-heading">Our Room Options</h2> -->
             <div class="room">
                 <img src="images/delux.jpg" alt="Deluxe Room">
                 <h3>Deluxe Room</h3>
-                <p>A spacious room with a king-size bed, private Jacuzzi, and stunning lake views. Perfect for couples looking to relax in style.</p>
-                <p><strong>Price:</strong> $250/night</p>
+                <p>Spacious room with Jacuzzi, king-size bed, and stunning views.</p>
+                <p><strong>$250/night</strong></p>
             </div>
             <div class="room">
                 <img src="images/suites.jpg" alt="Luxury Suite">
                 <h3>Luxury Suite</h3>
-                <p>Enjoy the ultimate luxury with a larger living area, premium bedding, and a cozy fireplace. Ideal for anniversaries and celebrations.</p>
-                <p><strong>Price:</strong> $350/night</p>
+                <p>Premium room with a cozy fireplace and lake views.</p>
+                <p><strong>$350/night</strong></p>
+            </div>
+            <div class="room">
+                <img src="images/suites.jpg" alt="Luxury Suite">
+                <h3>Luxury Suite</h3>
+                <p>Premium room with a cozy fireplace and lake views.</p>
+                <p><strong>$350/night</strong></p>
             </div>
             <div class="room">
                 <img src="images/villas.jpg" alt="Private Villa">
                 <h3>Private Villa</h3>
-                <p>Indulge in privacy with your own pool, outdoor hot tub, and breathtaking panoramic lake views. A romantic paradise for couples.</p>
-                <p><strong>Price:</strong> $450/night</p>
+                <p>Exclusive villa with private pool and outdoor hot tub.</p>
+                <p><strong>$450/night</strong></p>
             </div>
         </section>
 
-        <!-- Call to Action Section -->
-        <section id="cta" class="grid-con">
-            <h2 class="section-heading">Ready to Book Your Stay?</h2>
-            <p>Click the button below to check availability and make a reservation for the ultimate couples retreat.</p>
-            <a href="reservations.html" class="cta-button">Book Now</a>
-        </section>
-
-        <!-- Testimonials -->
-        <section id="testimonials" class="grid-con">
-            <h2 class="section-heading">What Our Guests Say</h2>
-            <blockquote>
-                "The most romantic getaway! The private balcony and lake views were amazing. Highly recommend the Deluxe Room!" 
-                <br><cite>- Sarah & James</cite>
-            </blockquote>
-            <blockquote>
-                "Our stay in the Private Villa was pure bliss. Perfect for a honeymoon or special occasion."
-                <br><cite>- Emily & Michael</cite>
-            </blockquote>
-        </section>
-
-        <!-- FAQ Section -->
-        <section id="faq" class="grid-con">
-            <h2 class="section-heading">Frequently Asked Questions</h2>
-            <div class="faq-item">
-                <h3>What amenities are included in each room?</h3>
-                <p>All rooms come with a Jacuzzi, wood-burning fireplace, private balcony, high-speed Wi-Fi, and complimentary breakfast.</p>
+         <!-- Why Choose Us -->
+        <div id="why-choose-us">  
+            <div class="grid-con">
+                <nav id="why-choose-us-nav" class="col-span-full">
+                    <h2 class="hidden">Nav for preference</h2>
+                    <ul>
+                        <li><a class="selected" href="#">which room best suites you</a></li>
+                        <li><a href="#">why choose our rooms </a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="faq-item">
-                <h3>What is your cancellation policy?</h3>
-                <p>You can cancel your reservation up to 48 hours before your check-in date for a full refund.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Do you offer packages for special occasions?</h3>
-                <p>Yes! Check out our <a href="packages.html">Packages</a> page for romantic and anniversary specials.</p>
-            </div>
-        </section>
-
-        <!-- Contact Info Footer -->
-        <footer id="footer-hero" class="grid-con">
-            <section id="footer-contact-info" class="col-span-full">
-                <h3>Couples Resort</h3>
-                <p>1198 Osprey Rd, Minden, Soyers Lake, ON, K0M 2K0</p>
-                <p>Toll Free: +1 877 201-1156<br>FAX: +1 613 638 2217<br>E-mail: info@coupleresort.com</p>
+            
+            <section id="why-choose-us-hero-con" class="grid-con">             
+                <div id="why-choose-us-heading-box" class="col-span-full">
+                    <h3 class="hero-img-h3"><span>Couples Resort</span><br> why choose our rooms</h3>
+                </div> 
             </section>
-        </footer>
-    </div>
+           
+            <div class="grid-con">
+                <div class="col-span-full line-separator"></div>
+                <div class="col-span-full why-choose-us-image-con" id="hot-tub">
+                    <div class="why-choose-us-image">
+                        <img src="images/spa.jpg" alt="couple in hot tub">
+                    </div>
+                    <h2>Delux Rooms</h2>  
+                    <p>Escape and rejuvenate yourself and your loved one with a spa vacation. Restore your balance and find energy with one of our Spa Packages for two. Visit the packages page for details on Spa Specials.  Begin your journey to soothe by taking a spa vacation today. </p> 
+                    <p>Get the ultimate special treatment you deserve and have been waiting for in our eco friendly organic luxury Algonquin Spa or with private in-suite spa treatments.</p>   
+                    <a href="#">CLICK TO LEARN MORE...</a>                   
+                </div>
 
-    <script src="js/main.js"></script>
-</body>
+                <nav class="col-span-full" id="why-choose-us-bottom-nav">
+                    <h2 class="hidden">Why us bottom nav</h2>
+                    <ol>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                    </ol>
+                </nav>
+            </div>                    
+        </div>
+
+        <div id="about-con">
+            <div id="about-hero-con" class="grid-con">                
+                <div id="about-hero-heading-box" class="col-span-full">
+                    <h2 class="hero-img-h2"><span>About room services</span><br> Villas</h2>
+                </div>           
+            </div>
+            
+            <div class="grid-con">
+                <div id="about-us-text" class="col-span-full line-separator">
+                    <article id="about-us-text-column1">
+                        <h2 class="hidden">Soyers Lake</h2>
+                    <p>Ontario's Couples Resort is on the shores of Haliburton's Soyers Lake, which is part of the Kashagawigamog Lake system. The village Minden, Ontario is a short 15-minute walk away. We are surrounded with breathtaking wilderness, pure fresh air, secluded forests, pristine waters, an abundance of sunny days and a blanket of stars at night.</p>
+
+                    <p>A 5-STAR Luxury Resort for 46 couples. Endless Nature and Sports Activities, together with Pampering Spa Treatments and followed by Decadent Gourmet dining by our International Chefs.</p>
+
+                    <p>Those of you who need to escape from the bustle will find us calming and rejuvenating. There are many ways to do nothing if that is your wish. On the other hand, unlimited activities will keep the adventurer active all year round. Ontario's Natural Algonquin Park is ideal for the sport enthusiast or avid adventurer who will be delighted with the extraordinary activities available.</p>
+                    </article>
+
+                    <article id="about-us-text-column2">
+                        <h2 class="hidden">the LeBlanc Family</h2>
+                    <p>"Thank you for your interest in our Couples Resort.  Here you will find the time to spend quality time together, and this is why we exist, to be here, so that you can spend lots of time together.  We, the LeBlanc Family, started in 1958 to take care of guests, in 1987 we moved to couples only (no kids and no meetings/conferences) as we knew that many couples needed special time together.  In 2008, Canada Select which was rating 5000 accommodation properties in Canada, decided we should join them because we were easily in the top 1%, a 5 Star, and we are glad we made it for you to enjoy as you deserve it.  Now, many times of the year, we offer rates super discounted as we wish to be accessible to as many couples as possible, as all couples should benefit from quiet time together.  We have learned over the decades from our guests that those guests that have a love for gratitude for each other and for their surroundings are the happiest people, daily I ask how grateful am I, and I hope you are filled with many things that you are grateful for.  If you know other couples who need time away please pass on the word." </p>
+                    </article>
+                
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="faq-con" class="grid-con">
+                <div class="col-span-full">
+                    <h2><span>Couples Resort</span><br>Testimonials</h2>
+                </div>
+                <section class="col-span-full faq-items line-separator">
+                    <h3>"Our stay at the Couples Resort was nothing short of magical. The private villa was stunning, and the views were breathtaking!"
+                        <strong><em>- Emily & John</em></strong>
+                    </h3>
+                </section>
+                <section class="col-span-full faq-items">
+                    <h3>"The perfect place for a romantic getaway! The food, the spa, and the staff were all amazing."
+                        <strong>- Sarah & Tom</strong></h3>
+                </section>
+                <section class="col-span-full faq-items">
+                    <h3>"Ambiance of the rooms and especially of whole resort attracts the guests , we were very happy staying there"<strong><em>- Hunter & Diana</em></strong></h3>
+                </section>
+                <!-- <section class="col-span-full faq-items">
+                    <h3>Amenities In-room</h3>
+                    <div id="faq-text-con">
+                        <div id="faq-list-group1">
+                            <ul>
+                                <li><a href="#">Private Out Door Hot Tubs</a></li>
+                                <li><a href="#">Fibre-Optic Internet - Free WIFI 50 inch Television</a></li>
+                                <li><a href="#">Free - Netflix Video Streaming</a></li>
+                                <li><a href="#">Walkout Spacious Lakeside Balcony</a></li>
+                                <li><a href="#">European Shower (2 or more heads)</a></li>
+                            </ul>
+                        </div>
+                        <div id="faq-list-group2">
+                            <ul>
+                                <li><a href="#">Private Out Door Hot Tubs</a></li>
+                                <li><a href="#">Fibre-Optic Internet - Free WIFI 50 inch Television</a></li>
+                                <li><a href="#">Free - Netflix Video Streaming</a></li>
+                                <li><a href="#">Walkout Spacious Lakeside Balcony</a></li>
+                                <li><a href="#">European Shower (2 or more heads)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section> -->
+
+      
+        </div>
+
+        
+        <section id="contact-hero-con" class="grid-con">
+            <div id="contact-hero-heading-box" class="col-span-full">
+                <h2 class="hero-img-h2"><span>Couples Resort</span><br> Contact</h2>
+            </div>
+        </section>
+
+            
+        <section class="grid-con">
+            <h2 class="hidden">Contact Information</h2>
+            <div id="contact-hero-text" class="line-separator col-span-full">
+                <p>Thank you for taking the time to learn more about our resort and why we are Ontario's number one choice for couples looking to reconnect. For reservation enquiries and further information, please complete our contact form below. Or if you prefer to talked call us at our toll free number listed below.</p>
+            </div>
+            <div id="contact-hero-address" class="col-span-full">          
+                <h3>Couples Resort (Inc.)</h3>
+                <p>1198 Osprey Rd, (End of)<br>
+                Minden, Soyers Lake, ON, <br>K0M 2K0</p>
+                <h3 class="hidden">Phone, Fax and Email</h3>
+                <p>Toll Free:+1 877 201-1156<br>
+                    FAX:+1 613 638 2217<br>
+                    E-mail: info[at]coupleresort.com </p>         
+            </div>
+            <!-- <div id="contact-hero-form" class="col-span-full">
+                <form action="email.php" method="POST" enctype="text/plain">
+                    <input name="fullName" type="text" placeholder="First & Last Name">
+                    <input name="contactInfo" type="text" required placeholder="Phone number or Email">
+                    <textarea name="msg" placeholder="Enter your questions, comments or concerns here..."></textarea>
+                    <input name="submit" type="submit" value="Send">
+                </form>
+            </div> -->
+        </section>
+            
+        <footer id="footer-hero" class="grid-con">        
+                <section id="footer-contact-info" class="col-span-full">
+                    <h3>Couples Resort</h3>
+                    <p>1198 Osprey Rd, (End of)<br>
+                        Minden, Soyers Lake, ON, <br>
+                        K0M 2K0
+                    </p>
+                    <p>
+                        Toll Free:+1 877 201-1156<br>
+                        FAX:+1 613 638 2217<br>
+                        E-mail: info@coupleresort.com
+                    </p>
+                </section>
+                <div id="footer-privacy" class="col-span-full line-separator">
+                    <p id="price-policy">All prices and services on this website and in our reservation system are based on conditions at the time of publishing and are subject to change. Please call to confirm services, availability and pricing. ©2013 Couples Resort Inc. All Rights Reserved. Privacy Policy </p>
+                </div>
+        </footer>
+        </div>
+        <script src="js/main.js"></script>   
+    </body>
 </html>
