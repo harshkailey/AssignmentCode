@@ -1,0 +1,134 @@
+/* --- General Styles --- */
+
+body {
+    font-family: 'Sanchez', 'Times New Roman', serif;
+    color: #626262;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+input, select, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #9a2018;
+}
+
+button, .submit-button {
+    background-color: #9a2018;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .submit-button:hover {
+    background-color: rgb(196, 28, 28);
+}
+
+textarea {
+    resize: none;
+    height: 120px;
+}
+
+/* --- Hero Section --- */
+
+
+/* --- Reservations Introduction --- */
+
+#reservations-intro {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+#reservations-intro h2 {
+    font-size: 24px;
+    color: #9a2018;
+    margin-bottom: 15px;
+}
+
+#reservations-intro p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* --- Reservation Form --- */
+
+#reservations-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.reservation-form label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.reservation-form input, 
+.reservation-form select, 
+.reservation-form textarea {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.reservation-form input:focus, 
+.reservation-form select:focus, 
+.reservation-form textarea:focus {
+    border-color: #9a2018;
+}
+
+.reservation-form .submit-button {
+    width: auto;
+    align-self: flex-end;
+}
+
+
+/* --- Responsive Adjustments --- */
+
+@media (max-width: 768px) {
+    #hero {
+        height: 150px;
+    }
+
+    .reservation-form input, 
+    .reservation-form select, 
+    .reservation-form textarea {
+        font-size: 14px;
+    }
+
+    .reservation-form .submit-button {
+        width: 100%;
+    }
+}
