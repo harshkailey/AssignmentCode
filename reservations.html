@@ -10,7 +10,6 @@
     <link href="css/grid_done.css" rel="stylesheet" type="text/css">
     <link href="css/main_done.css" rel="stylesheet" type="text/css">
     <link href="css/reservations.css" rel="stylesheet" type="text/css">
-
     <title>Reservations - Couples Resort</title>
 </head>
 <body>
@@ -42,7 +41,7 @@
         </header>
 
         <!-- Main Hero Section -->
-        <section id="hero" class="grid-con">
+        <section id="hero" class="grid-con fade-in">
             <h2 class="hidden">Book Your Stay</h2>
             <section id="hero-heading-box" class="col-span-full">
                 <h2 class="hero-img-h2">
@@ -52,7 +51,7 @@
         </section>
 
         <!-- Reservations Introduction -->
-        <section id="reservations-intro" class="grid-con">
+        <section id="reservations-intro" class="grid-con slide-in">
             <div class="col-span-full line-separator">
                 <h2 class="cr-red">Reservations Made Easy</h2>
                 <p>Book your stay at Couples Resort with ease. Select your preferred dates, room type, and special packages to create unforgettable memories with your loved one.</p>
@@ -63,7 +62,7 @@
         <section id="reservations-form" class="grid-con">
             <h2 class="hidden">Reservation Form</h2>
             <div class="col-span-full">
-                <form action="submit-reservation.php" method="POST" class="reservation-form">
+                <form id="reservation-form" class="reservation-form">
                     <label for="full-name">Full Name</label>
                     <input id="full-name" type="text" name="full_name" placeholder="Enter your full name" required>
                     
@@ -94,8 +93,14 @@
             </div>
         </section>
 
-        
-        <footer id="footer-hero" class="grid-con">        
+        <!-- Success Overlay -->
+        <div id="success-overlay">
+            <div class="success-checkmark">&#10004;</div>
+            <p class="success-message">Reservation Submitted Successfully!</p>
+        </div>
+
+        <!-- Footer Section -->
+        <footer id="footer-hero" class="grid-con">
             <section id="footer-contact-info" class="col-span-full">
                 <h3>Couples Resort</h3>
                 <p>1198 Osprey Rd, (End of)<br>
@@ -109,11 +114,23 @@
                 </p>
             </section>
             <div id="footer-privacy" class="col-span-full line-separator">
-                <p id="price-policy">All prices and services on this website and in our reservation system are based on conditions at the time of publishing and are subject to change. Please call to confirm services, availability and pricing. ©2013 Couples Resort Inc. All Rights Reserved. Privacy Policy </p>
+                <p id="price-policy">All prices and services on this website and in our reservation system are based on conditions at the time of publishing and are subject to change. Please call to confirm services, availability, and pricing. ©2013 Couples Resort Inc. All Rights Reserved. Privacy Policy</p>
             </div>
-    </footer>
+        </footer>
     </div>
 
-    <script src="js/main.js"></script>
+    <script>
+        // Show the success overlay and redirect
+        const form = document.getElementById('reservation-form');
+        const overlay = document.getElementById('success-overlay');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            overlay.classList.add('visible');
+            setTimeout(() => {
+                window.location.href = 'reservations.html'; // Redirect to home page
+            }, 2000); // 3-second delay
+        });
+    </script>
 </body>
 </html>
